@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddStackExchangeRedisCache(options =>
 {
     options.InstanceName = "My Redis Instance";
-    options.Configuration = "localhost:";
+    options.Configuration = "localhost:6379";
 });  
 
 builder.Services.AddControllers();
